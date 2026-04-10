@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilüfer Konak Öğretmen Lokali</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Konak Lokal & Çay Bahçesi</div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links" id="menuLinkleri">
+         <li><a href="#hakkimizda">Hakkımızda</a></li>
+         <li><a href="#resimler">Resimler</a></li> 
+         <li><a href="#qr-menu">Menü</a></li>
+         <li><a href="#rezervasyon">Rezervasyon</a></li>
+         <li><a href="#iletisim">İletişim</a></li>
+         <li><a href="#adres">Adres</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+        <h1>Nilüfer Konak Öğretmen Lokali</h1>
+        <p>Menümüze bir göz atmak ister misiniz?</p>
+        <a href="#qr-menu" class="btn">Menüyü İncele</a>
+        </div>
+    </header>
+
+    <section id="hakkimizda" class="section">
+        <h2>Hakkımızda</h2>
+        <div class="about-content">
+        <p>Bursa'nın Nilüfer ilçesinde bulunan çay bahçemizde hepinizi görmekten mutluluk duyarız. Güler yüzlü çalışanlarımızla birlikte sizlere en iyi şekilde hizmet vermeye çalışmaktayız.</p>
+        </div>
+    </section>
+
+    <section id="qr-menu" class="section bg-light">
+        <h2>Dijital Menümüz</h2>
+        <p>Tüm yiyecek (Ayvalık Tostumuz dahil) ve içecek çeşitlerimizi incelemek için aşağıdaki butona tıklayabilirsiniz.</p>
+        <div style="margin-top: 30px;">
+        <a href="https://menu-online.co/ogretmenlerlokali/undefined/welcome" target="_blank" class="btn">Menüye Git</a>
+        </div>
+    </section>
+
+    <section id="resimler" class="section">
+        <h2>Mekanımızdan Kareler</h2>
+        <p>Huzurlu ortamımızı ve lezzetlerimizi fotoğraflarla keşfedin.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                 <img src="lokal-foto.jpg" alt="Lokal Kar Manzarası">
+            </div>
+            <div class="gallery-item">
+                 <img src="resim2.jpg" alt="Lokal İç Mekan">
+            </div>
+            <div class="gallery-item">
+                 <img src="resim3.jpg" alt="Lokal Bahçe">
+            </div>
+            <div class="gallery-item">
+                 <img src="resim4.jpg" alt="Lokal Yemekler">
+            </div>
+        </div>
+    </section>
+
+    <section id="rezervasyon" class="section">
+        <h2>Rezervasyon Yapın</h2>
+        <p>Doğum günü kutlaması, yemek veya özel günleriniz için yerinizi önceden ayırtın.</p>
+        <form class="reservation-form">
+            <input type="text" id="adSoyad" placeholder="Adınız Soyadınız" required>
+            <input type="tel" id="telefon" placeholder="Telefon Numaranız" required>
+            <div class="form-row" style="display: flex; gap: 10px;">
+                <input type="date" id="tarih" required>
+                <input type="time" id="saat" required>
+            </div>
+            <input type="number" id="kisi" placeholder="Kişi Sayısı" min="1" required>
+            <button type="submit" class="btn-submit">Talep Gönder</button>
+        </form>
+    </section>
+
+    <section id="iletisim" class="section bg-light">
+        <h2>Bize Ulaşın</h2>
+        <div class="contact-grid">
+            <a href="tel:+9055066898330" class="contact-card">
+                <div class="icon">📞</div>
+                <h3>Telefon</h3>
+                <p>0506 689 83 30</p>
+            </a>
+            <a href="https://wa.me/905066898330" target="_blank" class="contact-card whatsapp">
+                <div class="icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p>Hızlı Mesaj</p>
+
+            <a href="mailto:info@nilüferöğretmenlerlokali.com" class="contact-card email">
+    <div class="icon">✉️</div>
+    <h3>E-Posta</h3>
+    <p>info@nilüferöğretmenlerlokali.com</p>
+</a>
+            </a>
+            <a href="https://instagram.com/konakogretmencafe" target="_blank" class="contact-card instagram">
+                <div class="icon">📸</div>
+                <h3>Instagram</h3>
+                <p>@konakogretmencafe</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="adres" class="section">
+        <h2>Neredeyiz?</h2>
+        <p>Nilüfer Konak Mahallesi'ndeki çay bahçemize bekliyoruz.</p>
+        <div class="address-container">
+            <div class="address-details">
+                <div class="icon" style="font-size: 30px;">📍</div>
+                <h3>Açık Adresimiz</h3>
+                <p>Nilüfer Konak Mah. Yakut Sk. No:4-1, Bursa 16110</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Nilüfer+Öğretmenler+Lokali+Çay+Bahçesi" target="_blank" class="btn" style="margin-top: 20px;">Yol Tarifi Al</a>
+            </div>
+            <div class="map-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.014708265928!2d28.975294474895296!3d40.208735768274096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca169fb0cd88c9%3A0x40a4db0b3c69d2de!2zTmlsw7xmZXIgw5bEn3JldG1lbmxlciBMb2thbGkgw4dheSBCYWjDp2VzaQ!5e0!3m2!1str!2str!4v1775851203118!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Nilüfer Konak Öğretmen Lokali. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+        // MENU SCRIPT
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("aktif");
+        });
+
+        document.querySelectorAll(".nav-links li a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("aktif");
+            });
+        });
+
+        const _supabaseUrl = 'yoursupabaseurl'; //I didn't enter my key here because of security
+        const _supabaseKey = 'yourkey';
+        const _supabase = supabase.createClient(_supabaseUrl, _supabaseKey);
+
+        const reservationForm = document.querySelector('.reservation-form');
+
+        reservationForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const adVal = document.getElementById('adSoyad').value;
+            const telVal = document.getElementById('telefon').value;
+            const tarVal = document.getElementById('tarih').value;
+            const saatVal = document.getElementById('saat').value;
+            const kisiVal = document.getElementById('kisi').value;
+
+            const { data, error } = await _supabase
+              .from('rezervasyonlar')
+              .insert([
+                { 
+                    isim: adVal, 
+                    telefon: telVal, 
+                    tarih: tarVal, 
+                    saat: saatVal, 
+                    kisi_sayisi: kisiVal 
+                }
+              ]);
+
+            if (error) {
+                alert("Hata: " + error.message);
+            } else {
+                alert("Rezervasyonunuz başarıyla kaydedildi! Görüşmek üzere.");
+                reservationForm.reset();
+            }
+        });
+    </script>
+</body>
+</html>
